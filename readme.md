@@ -26,4 +26,8 @@
 
 ## JavaScript 程序设计
 
-- [带并发限制的异步任务调度器](./practice/other/scheduler.js)
+-   [带并发限制的异步任务调度器](./practice/other/scheduler.js)
+
+## 思考
+
+1. `Math.max` 的底层实现是什么？是否会遍历数据？
