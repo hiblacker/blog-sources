@@ -1,9 +1,12 @@
 // 实现一个带并发限制的异步任务调度器，保证同时最多运行2个任务
 class Scheduler {
-    constructor() {
+    constructor(opt = {}) {
+        const defaultOption = { limit: 2 };
+        const finalOption = Object.assign({}, defaultOption, opt);
         this.queue = [];
         this.holdOn = [];
-        this.limit = 2;
+        this.limit = finalOption.limit;
+        console.log(this.limit);
         this.id = 0;
     }
     add(promiseCreator) {
@@ -49,7 +52,7 @@ const timeout = (time) =>
         setTimeout(resolve, time);
     });
 
-const scheduler = new Scheduler();
+const scheduler = new Scheduler({ limit: 2 });
 
 const addTask = (time, order) => {
     scheduler
@@ -64,10 +67,10 @@ const addTask = (time, order) => {
 // addTask(2000, 5);
 // addTask(2000, 6);
 
-addTask(400, 4) 
-addTask(200, 2) 
-addTask(300, 3) 
-addTask(100, 1) 
+addTask(400, 4);
+addTask(200, 2);
+addTask(300, 3);
+addTask(100, 1);
 
 // 应该输出：2 4 3 1
 
