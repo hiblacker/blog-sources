@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/practice/leetcode/bubble-sort.js"
+            "program": "${fileDirname}/${fileBasenameNoExtension}.js"
         }
     ]
 }
