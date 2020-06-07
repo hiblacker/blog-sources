@@ -11,7 +11,6 @@
 function bubbleSort(arr){
     const len = arr.length - 1
     for(let i in arr){
-        console.log({i});
         for (let j = 0; j < len - i; j++) {
             const cur = arr[j];
             const next = arr[j + 1];
@@ -22,4 +21,5 @@ function bubbleSort(arr){
     return arr
 }
 
-console.log([3,2,1])
+const arr = [3,2,1,6,5,4,3,3,2]
+console.log(bubbleSort(arr))
