@@ -136,7 +136,7 @@ public class JavaScriptInterfaceDemoActivity extends Activity {
 window.nativeBridge.postMessage(message);
 ```
 
-在 4.2 之前，Android 注入 JavaScript 对象的接口是 addJavascriptInterface，但是这个接口有漏洞，可以被不法分子利用，危害用户的安全，因此在 4.2 中引入新的接口 @JavascriptInterface（上面代码中使用的）来替代这个接口，解决安全问题。所以 Android 注入对对象的方式是 **有兼容性问题的**。（4.2 之前很多方案都采用拦截 prompt 的方式来实现，因为篇幅有限，这里就不展开了。）
+在 4.2 之前，Android 注入 JavaScript 对象的接口是 addJavascriptInterface，但是这个接口有漏洞，可以被不法分子利用，危害用户的安全，因此在 4.2 中引入新的接口 @JavascriptInterface（上面代码中使用的）来替代这个接口，解决安全问题。所以 Android 注入对象的方式是 **有兼容性问题的**。（4.2 之前很多方案都采用拦截 prompt 的方式来实现，因为篇幅有限，这里就不展开了。）
 
 ##### 拦截 URL SCHEME
 先解释一下 URL SCHEME：URL SCHEME是一种类似于 url 的链接，是为了方便 App 直接互相调用设计的，形式和普通的 url 近似，主要区别是 protocol 和 host 一般是自定义的，例如: `qunarhy://hy/url?url=http://ymfe.tech`，protocol 是 `qunarhy`，host 则是 `hy`。

@@ -108,3 +108,15 @@ addTask(100, 1);
 // 2   2
 //     3   3   3
 //             1
+
+
+class Scheduler3 {
+    list = []
+    count = 0
+    constructor(limit){
+        this.limit = limit
+    }
+    async add(fn){
+
+    }
+}
