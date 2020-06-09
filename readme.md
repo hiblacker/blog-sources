@@ -23,6 +23,7 @@
 -   [m - 字符串解码](./practice/leetcode/m-decode-string.js)
 -   [m - 搜索二维矩阵](./practice/leetcode/m-search-matrix.js)
 -   [m - 和可被 K 整除的子数组](./practice/leetcode/m-subarray-div-by-k.js)
+-   [m - 把数字翻译成字符串](./practice/leetcode/m-translate-num.js)
 
 ## JavaScript 程序设计
 
@@ -31,3 +32,8 @@
 ## 思考
 
 1. `Math.max` 的底层实现是什么？是否会遍历数据？
+
+
+## TODO
+1. [JavaScript Promise迷你书（中文版](https://wohugb.gitbooks.io/promise/content/usage/resolve.html)
+2. 完善 Promise 文章
