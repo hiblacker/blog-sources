@@ -19,6 +19,10 @@ new Promise((resolve, reject) => {
     .catch(() => console.log(7))
     .then(() => console.log(8));
 
+setTimeout(() => {
+    console.log(9)
+});
+
 
 // 注：根据规范 [2.2.4](https://promisesaplus.com/#point-34) then 中 onFulfilled 或 onRejected 必须在执行环境堆栈只包含平台代码后调用。
 
