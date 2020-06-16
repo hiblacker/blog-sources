@@ -62,9 +62,15 @@ class Scheduler2 {
             });
 
         this.count++;
+        let result
+        try {
+            result = await fn()
+        } catch (error) {
+            console.log(error);
+        }
+        
 
-        const result = await fn();
-
+        console.log({ result });
         this.count--;
 
         if (this.list.length > 0) {
@@ -96,10 +102,10 @@ const addTask = (time, order) => {
 // addTask(2000, 5);
 // addTask(2000, 6);
 
-addTask(400, 4);
-addTask(200, 2);
-addTask(300, 3);
-addTask(100, 1);
+// addTask(400, 4);
+// addTask(200, 2);
+// addTask(300, 3);
+// addTask(100, 1);
 
 // 应该输出：2 4 3 1
 
@@ -109,14 +115,3 @@ addTask(100, 1);
 //     3   3   3
 //             1
 
-
-class Scheduler3 {
-    list = []
-    count = 0
-    constructor(limit){
-        this.limit = limit
-    }
-    async add(fn){
-
-    }
-}
