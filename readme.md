@@ -20,6 +20,7 @@
 
 -   [e - 拥有最多糖果的孩子](./practice/leetcode/e-kids-with-candies.js)
 -   [e - 左旋转字符串](./practice/leetcode/e-reverse-left-words.js)
+-   [e - 排列硬币](./practice/leetcode/e-arranging-coins.js)
 -   [m - 字符串解码](./practice/leetcode/m-decode-string.js)
 -   [m - 搜索二维矩阵](./practice/leetcode/m-search-matrix.js)
 -   [m - 和可被 K 整除的子数组](./practice/leetcode/m-subarray-div-by-k.js)
