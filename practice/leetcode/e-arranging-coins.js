@@ -35,7 +35,12 @@ var arrangeCoins = function (n) {
     let x;
     // 前 x 项和 (1 + x) * x / 2 
     for (x = 1; (((1 + x) * x) / 2) <= n; x++) {}
-    console.log(x);
+    return --x
+};
+var arrangeCoins2 = function (n) {
+    // 设可以排成 x 行，前 x 项和小于等于 n
+    // 前 x 项和 (1 + x) * x / 2 <= n 即 x <= √￣(2*n + 1/4) - 1/2 
+    return ~~(Math.sqrt(2*n + 1/4) - 1/2)
 };
 arrangeCoins(5)
 arrangeCoins(8)
