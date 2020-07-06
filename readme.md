@@ -25,6 +25,16 @@
 -   [m - 搜索二维矩阵](./practice/leetcode/m-search-matrix.js)
 -   [m - 和可被 K 整除的子数组](./practice/leetcode/m-subarray-div-by-k.js)
 -   [m - 把数字翻译成字符串](./practice/leetcode/m-translate-num.js)
+-   [m - 不同路径 II](./practice/leetcode/m-unique-path-ii.js)
+
+#### 常见题解思路
+##### 动态规划
+-   [m - 不同路径 II](./practice/leetcode/m-unique-path-ii.js)
+-   剑指 Offer 46. 把数字翻译成字符串
+-   70. 爬楼梯]
+-   221. 最大正方形
+-   1162. 地图分析
+
 
 ## JavaScript 程序设计
 
