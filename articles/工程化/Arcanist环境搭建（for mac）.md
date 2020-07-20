@@ -6,21 +6,18 @@
 
 ## Git
 
-### 安装
-
 首先安装 `brew`，如果已安装 `brew`，这步跳过。
 
-```bash
+```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-然后使用 `brew` 来安装 git
+然后使用 `brew` 来安装 Git
 
-```bash
+```
 brew install git
 ```
 
-检查确认
 安装完成后，执行 `git --version`,观察到如下输出即证明安装成功：
 ![git](https://cdn.superwen.cn/halo/07efbaf194ab66bdb82cda37f5a514e3.png)
 
