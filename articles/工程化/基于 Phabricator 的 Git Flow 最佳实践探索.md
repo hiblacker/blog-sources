@@ -1,4 +1,4 @@
-> [官方文档](https://secure.phabricator.com/book/phabricator/)
+> Phabricator [官方文档](https://secure.phabricator.com/book/phabricator/)
 
 ## 简介
 
